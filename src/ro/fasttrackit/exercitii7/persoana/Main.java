@@ -10,8 +10,10 @@ public class Main {
         c.printDetails();
 
         a.setAge(24);
+        a.setAge(33);
         a.printDetails();
         a.setName("Joiana");
+        a.setName("Cucu");
         System.out.println(a.getName());
         a.printDetails();
     }

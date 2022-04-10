@@ -12,31 +12,31 @@ public class Produs {
         this.quantity=quantity;
         this.category=category;
     }
-    public String getName(){
+    String getName(){
         return name;
     }
 
-    public String getCategory(){
+    String getCategory(){
        return category;
     }
 
-    public double getPrice(){
+    double getPrice(){
         return price;
     }
 
-    public int getQuantity(){
+    int getQuantity(){
         return quantity;
     }
 
-    public boolean hasStock(){
+    boolean hasStock(){
         return quantity > 0;
     }
 
-    public boolean isCategory(String category){
+    boolean isCategory(String category){
         return this.category.equals(category);
     }
 
-    public void printDetails(){
+    void printDetails(){
         System.out.println("Name-- "+name+" --Price-- "+price+" --Quantity-- " + quantity+" --Category-- "+category);
     }
 }
