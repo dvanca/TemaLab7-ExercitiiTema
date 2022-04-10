@@ -11,7 +11,7 @@ public class Main {
         a.printDetails();
         f.printDetails();
         System.out.println(a.getName());
-        System.out.println(a.getPrice());
+        System.out.println(a.getPrice()+" RON");
         System.out.println(a.getCategory());
         System.out.println(a.getQuantity());
         System.out.println(d.hasStock());
