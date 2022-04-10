@@ -12,23 +12,23 @@ public class Bottle {
 
     }
 
-    public boolean hasLiquid() {
+    boolean hasLiquid() {
         return availableLiquid > 0;
     }
 
-    public int howMuchLiquid() {
+    int howMuchLiquid() {
         return availableLiquid;
     }
 
-    public int emptyCapacity() {
+    int emptyCapacity() {
         return totalCapacity - availableLiquid;
     }
 
-    public boolean isOpen() {
+    boolean isOpen() {
         return open;
     }
 
-    public void closeBottle() {
+    void closeBottle() {
         if (!this.open) {
             System.out.println("Sticla este inchisa");
             return;
@@ -37,7 +37,7 @@ public class Bottle {
         System.out.println("Sticla a fost inchisa");
     }
 
-    public void openBottle() {
+    void openBottle() {
         if (this.open) {
             System.out.println("Sticla este deschisa");
         } else {
@@ -47,11 +47,10 @@ public class Bottle {
 
     }
 
-    public void drinkLiquid(int quantity) {
+    void drinkLiquid(int quantity) {
         if (isOpen()) {
             availableLiquid = availableLiquid - quantity;
             System.out.println("S-au consumat " + quantity + " ml");
-            return;
         } else {
             System.out.println("Sticla este inchisa");
         }
