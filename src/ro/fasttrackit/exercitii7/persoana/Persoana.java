@@ -11,30 +11,30 @@ public class Persoana {
         this.isMarried=isMarried;
     }
 
-    public String getName(){
+    String getName(){
        return name;
     }
 
-    public int getAge(){
+    int getAge(){
         return age;
     }
-    public String getIsMarried(){
-        if (isMarried==false){
+    String isMarried(){
+        if (this.isMarried==false){
             return "necasatorit";
         } else {
             return  "casatorit";
         }
     }
 
-    public void setAge(int age){
+    void setAge(int age){
         this.age = age;
     }
 
-    public void setName(String name){
+    void setName(String name){
         this.name =name;
     }
 
-    public void printDetails(){
+    void printDetails(){
         System.out.println("The name is " + getName() + " the age is " + getAge()+ " the status is " + getIsMarried());
     }
 
