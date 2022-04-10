@@ -19,7 +19,7 @@ public class Persoana {
         return age;
     }
     String isMarried(){
-        if (this.isMarried==false){
+        if (!this.isMarried){
             return "necasatorit";
         } else {
             return  "casatorit";
@@ -35,7 +35,7 @@ public class Persoana {
     }
 
     void printDetails(){
-        System.out.println("The name is " + getName() + " the age is " + getAge()+ " the status is " + getIsMarried());
+        System.out.println("The name is " + getName() + " the age is " + getAge()+ " the status is " + isMarried());
     }
 
 }
